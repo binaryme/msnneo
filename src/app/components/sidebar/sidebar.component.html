@@ -15,4 +15,7 @@
       <input type="text" class="form-control">
     </div>
   </div>
+  <div class="row">
+    <app-userlist *ngFor="let user of users" [nombre]="user.nombre" class="col-12"></app-userlist>
+  </div>
 </header>
