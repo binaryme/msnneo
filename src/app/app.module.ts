@@ -7,13 +7,15 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { RightbarComponent } from './components/rightbar/rightbar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { UserlistComponent } from './components/userlist/userlist.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
     DashboardComponent,
-    RightbarComponent
+    RightbarComponent,
+    UserlistComponent
   ],
   imports: [
     BrowserModule,
