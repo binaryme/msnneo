@@ -12,10 +12,11 @@
   </div>
   <div class="row">
     <div class="col">
-      <input type="text" class="form-control">
+      <input type="text" class="form-control" [(ngModel)]="searchText">
     </div>
   </div>
   <div class="row">
-    <app-userlist *ngFor="let user of users" [nombre]="user.nombre" class="col-12"></app-userlist>
+    <app-userlist *ngFor="let user of users | filter : {id: searchText, nombre:searchText}; let i=index;" [nombre]="user.nombre"
+      class="col-12"></app-userlist>
   </div>
 </header>
