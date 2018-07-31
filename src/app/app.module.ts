@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { FilterPipe } from './pipes/filter.pipe';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,14 +17,11 @@ import { UserlistComponent } from './components/userlist/userlist.component';
     SidebarComponent,
     DashboardComponent,
     RightbarComponent,
-    UserlistComponent
+    UserlistComponent,
+    FilterPipe
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NgbModule.forRoot()
-  ],
+  imports: [BrowserModule, AppRoutingModule, NgbModule.forRoot(), FormsModule],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

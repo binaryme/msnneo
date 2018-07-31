@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent implements OnInit {
+  public searchText: string;
   users: Object = [
     { id: 1, nombre: 'Israel' },
     { id: 2, nombre: 'Juan' },
