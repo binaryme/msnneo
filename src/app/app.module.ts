@@ -12,6 +12,8 @@ import { UserlistComponent } from './components/userlist/userlist.component';
 import { DropdownsettingsComponent } from './components/dropdownsettings/dropdownsettings.component';
 import { OnlineofflineDirective } from './directivas/onlineoffline.directive';
 import { MensajesComponent } from './components/mensajes/mensajes.component';
+import { MessengerComponent } from './pages/messenger/messenger.component';
+import { LoginComponent } from './pages/login/login.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { MensajesComponent } from './components/mensajes/mensajes.component';
     FilterPipe,
     DropdownsettingsComponent,
     OnlineofflineDirective,
-    MensajesComponent
+    MensajesComponent,
+    MessengerComponent,
+    LoginComponent
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule.forRoot(), FormsModule],
   providers: [],

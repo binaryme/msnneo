@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
   public searchText: string;
-  online: boolean;
+  online: boolean = true;
   users: Object = [
     { id: 1, nombre: 'Israel' },
     { id: 2, nombre: 'Juan' },

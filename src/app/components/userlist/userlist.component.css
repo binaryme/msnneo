@@ -4,3 +4,7 @@ h5 {
 p {
   font-size: 10px;
 }
+
+a {
+  text-decoration: none;
+}
