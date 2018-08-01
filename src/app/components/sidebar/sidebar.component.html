@@ -1,18 +1,36 @@
 <header class="navbar-sidebar">
   <div class="row">
     <div class="col-3">
-      <a class="fa fa-cogs" href="#" (click)="metodo"></a>
+      <div ngbDropdown class="d-inline-block">
+        <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
+          <i class="fa fa-cogs"></i>
+        </button>
+        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+          <button class="dropdown-item">Settings</button>
+          <button class="dropdown-item" (click)="setOnline()">Online</button>
+          <button class="dropdown-item" (click)="setOffline()">Offline</button>
+        </div>
+      </div>
     </div>
     <div class="col-6">
-      <p class="text-center messenger">Messenger</p>
+      <p class="text-center messenger">
+        <span class="online" [ngClass]="{online: online == true, offline: online == false}">
+        </span>Messenger</p>
     </div>
     <div class="col-3">
-      <a class="far fa-edit" href="#">Edit</a>
+      <button class="btn btn-outline-primary" id="dropdownBasic1">
+        <a class="far fa-edit" href="#">Edit</a>
+      </button>
     </div>
+    <hr style="width: 100%;">
   </div>
   <div class="row">
     <div class="col">
-      <input type="text" class="form-control">
+      <input type="text" class="form-control" [(ngModel)]="searchText">
     </div>
+  </div>
+  <div class="row">
+    <app-userlist *ngFor="let user of users | filter : {id: searchText, nombre:searchText}; let i=index;" [nombre]="user.nombre"
+      class="col-12"></app-userlist>
   </div>
 </header>

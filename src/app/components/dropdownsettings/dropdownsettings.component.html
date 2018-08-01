@@ -1,0 +1,10 @@
+<button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
+  <i class="fa fa-cogs"></i>
+</button>
+<div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+  <button class="dropdown-item" appOnlineoffline>Settings</button>
+  <button class="dropdown-item" appOnlineoffline>Online</button>
+  <button class="dropdown-item" appOnlineoffline>Offline</button>
+  <button class="dropdown-item" *ngIf="online">Estoy online</button>
+
+</div>
