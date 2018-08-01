@@ -10,6 +10,8 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { RightbarComponent } from './components/rightbar/rightbar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { UserlistComponent } from './components/userlist/userlist.component';
+import { DropdownsettingsComponent } from './components/dropdownsettings/dropdownsettings.component';
+import { OnlineofflineDirective } from './directivas/onlineoffline.directive';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { UserlistComponent } from './components/userlist/userlist.component';
     DashboardComponent,
     RightbarComponent,
     UserlistComponent,
-    FilterPipe
+    FilterPipe,
+    DropdownsettingsComponent,
+    OnlineofflineDirective
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule.forRoot(), FormsModule],
   providers: [],

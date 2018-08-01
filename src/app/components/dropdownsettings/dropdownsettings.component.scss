@@ -1,0 +1,16 @@
+.btn-outline-primary {
+  border-color: #ffffff !important;
+}
+
+.btn-outline-primary:focus,
+.btn-outline-primary:hover {
+  border-color: #ffffff !important;
+  background-color: #ffffff !important;
+  i {
+    color: blueviolet;
+  }
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
