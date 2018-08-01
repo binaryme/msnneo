@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-mensajes',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mensajes.component.css']
 })
 export class MensajesComponent implements OnInit {
+  user: String;
   mensajes: Object = [
     { id: 1, mensaje: 'Hola como te va???' },
     { id: 2, mensaje: 'Hola como te va???' },
@@ -17,7 +19,7 @@ export class MensajesComponent implements OnInit {
     { id: 8, mensaje: 'Hola como te va???' },
     { id: 9, mensaje: 'Hola como te va???' }
   ];
-  constructor() {}
+  constructor(private route: ActivatedRoute) {}
 
   ngOnInit() {}
 }
