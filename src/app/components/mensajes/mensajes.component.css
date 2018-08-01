@@ -1,0 +1,13 @@
+.messages {
+  height: 75vh;
+  overflow-y: scroll;
+}
+
+.usuario-activo {
+  font-weight: 600;
+  padding-top: 8px;
+}
+
+hr {
+  margin-top: 5px;
+}
